@@ -16,38 +16,6 @@ msgstr ""
 msgid "Unable to find an expression to evaluate"
 msgstr "Geen te evalueren expressie aangetroffen"
 
-#: helpnotes.rs_downloaded
-msgid "Downloaded so far: "
-msgstr "Reeds gedownload:"
-
-#: helpnotes.rs_downloading
-msgid "Downloading please wait..."
-msgstr "Bezig met downloaden; even geduld..."
-
-#: helpnotes.rs_installed
-msgctxt "helpnotes.rs_installed"
-msgid "Installed"
-msgstr "Geïnstalleerd"
-
-#: helpnotes.rs_nopowershell
-msgid "Sorry, your Windows does not have Powershell 3"
-msgstr ""
-
-#: helpnotes.rs_nossl
-msgid "You do not appear to have the OpenSSL Library installed"
-msgstr "Het lijkt erop dat OpenSSL niet is geïnstalleerd"
-
-#: helpnotes.rs_restored
-#, fuzzy
-#| msgid "Installed"
-msgctxt "helpnotes.rs_restored"
-msgid "Restored"
-msgstr "Geïnstalleerd"
-
-#: helpnotes.rs_spanish
-msgid "Spanish"
-msgstr "Spaans"
-
 #: mainunit.rsabout1
 msgid "This is tomboy-ng, a rewrite of Tomboy Notes using Lazarus"
 msgstr "Dit is tomboy-ng, een vernieuwde versie van Tomboy Notities, geschreven in Lazarus"
@@ -78,97 +46,21 @@ msgstr "Best.syst."
 msgid "Version"
 msgstr "Versie"
 
-#: mainunit.rscannotdismiss1
-#, fuzzy
-#| msgid "Sadly, on this OS or because of a Bad Note,"
-msgid "Sadly, because of a Bad Note,"
-msgstr "Omwille van een onjuiste notitie,"
-
-#: mainunit.rscannotdismiss2
-msgid "I cannot let you dismiss this window"
-msgstr "kan dit venster niet worden verworpen."
-
-#: mainunit.rscannotdismiss3
-msgid "Are you trying to shut me down ? Dave ?"
-msgstr "Probeer je me af te sluiten? David?"
-
 #: mainunit.rsfailedtoindex
 msgid "Failed to index one or more notes."
 msgstr "Kan één of meerdere notities niet indexeren."
-
-#: recover.rsallrestored
-msgid "Notes and config files Restored, restart suggested."
-msgstr "Notities en configuratiebestanden hersteld; herstart tomboy-ng."
-
-#: recover.rsbadnotes_1
-msgid "You have"
-msgstr "Er staan"
-
-#: recover.rsbadnotes_2
-msgid " bad notes in Notes Directory"
-msgstr " onjuiste notities in de notitiemap"
-
-#: recover.rsclickbadnote
-msgid "Double click on any Bad Notes"
-msgstr "Dubbelklik op de onjuiste notities"
-
-#: recover.rsclicksnapshot
-msgid "Double Click an Available Snapshot"
-msgstr "Dubbelklik op de beschikbare momentopname"
-
-#: recover.rsdeleteandreplace_1
-msgid "Notes at risk !"
-msgstr "Beveiligingsprobleem!"
-
-#: recover.rsdeleteandreplace_2
-msgid "Delete all notes in"
-msgstr "Wis alle notities in"
-
-#: recover.rsdeleteandreplace_3
-msgid "and replace with snapshot dated"
-msgstr "en vervang ze door de momentopname d.d."
-
-#: recover.rsdeleteddamaged_1
-msgid "OK, deleted"
-msgstr "Oké, verwijderd"
-
-#: recover.rsdeleteddamaged_2
-msgid "damaged notes"
-msgstr "beschadigde notities"
-
-#: recover.rsnobadnotes
-msgid "No errors, perhaps you should proceed to Snapshots"
-msgstr "Geen fouten; ga door naar de momentopnamen"
-
-#: recover.rsnosafetysnapshot
-msgid "A Safety snapshot not found. Try setting Snapsot Dir to where you may have one."
-msgstr "Geen back-upmomentopname aangetroffen. Stel de momentopnamemap in op de locatie waar de opname staat."
-
-#: recover.rsnotesinsnap
-msgid "Notes in Snapshot"
-msgstr "Notities in momentopname"
-
-#: recover.rstryrecover_1
-msgid "Proceed to Snapshots or try to recover by double clicking below,"
-msgstr "Ga door naar momentopnamen of herstel door hieronder te dubbelklikken"
-
-#: recover.rstryrecover_2
-msgid "if and only IF, you see useful content, make a small change, exit"
-msgstr "áls je bruikbare inhoud ziet. Indien ja, pas dit aan en sluit af."
-
-#: recover.rswehavesnapshots_1
-msgid "We have"
-msgstr "Er zijn"
-
-#: recover.rswehavesnapshots_2
-msgid "snapshots"
-msgstr "momentopnamen"
 
 #: resourcestr.rsalldone
 #, fuzzy
 msgctxt "resourcestr.rsalldone"
 msgid "All Done"
 msgstr "Voltooid"
+
+#: resourcestr.rsallrestored
+#, fuzzy
+msgctxt "resourcestr.rsallrestored"
+msgid "Notes and config files Restored, restart suggested."
+msgstr "Notities en configuratiebestanden hersteld; herstart tomboy-ng."
 
 #: resourcestr.rsautosnapshotrun
 msgid "Completed autosnapshot run."
@@ -178,11 +70,17 @@ msgstr ""
 msgid "Auto sync not possible right now"
 msgstr ""
 
+#: resourcestr.rsbadnotes
+#, object-pascal-format
+msgctxt "resourcestr.rsbadnotes"
+msgid "You have %d bad notes in Notes Directory"
+msgstr ""
+
 #: resourcestr.rsbadnotesfound1
 #, fuzzy
 #| msgid "Bad notes found, goto Settings -> Snapshots -> Existing Notes."
 msgctxt "resourcestr.rsbadnotesfound1"
-msgid "Please go to Settings -> Snapshot -> Recover ...."
+msgid "Please go to Settings -> Recover -> Recover Notes"
 msgstr "Onjuiste notities aangetroffen. Ga naar Instellingen --> Momentopnamen --> Bestaande notities."
 
 #: resourcestr.rsbadnotesfound2
@@ -210,6 +108,21 @@ msgstr ""
 msgid "Change Sync Repo"
 msgstr ""
 
+#: resourcestr.rsclickbadnote
+#, fuzzy
+msgctxt "resourcestr.rsclickbadnote"
+msgid "Double click on any Bad Notes"
+msgstr "Dubbelklik op de onjuiste notities"
+
+#: resourcestr.rsclicksnapshot
+msgctxt "resourcestr.rsclicksnapshot"
+msgid "Click an Available Snapshot"
+msgstr ""
+
+#: resourcestr.rscontentdated
+msgid "Content Dated"
+msgstr ""
+
 #: resourcestr.rscopyfailed
 #, fuzzy
 msgctxt "resourcestr.rscopyfailed"
@@ -221,6 +134,23 @@ msgstr "Kan origineel niet kopiëren naar back-upmap"
 msgctxt "resourcestr.rscreatenewrepo"
 msgid "Create a new Repo ?"
 msgstr "Wil je een nieuwe repo maken?"
+
+#: resourcestr.rsdeleteandreplace_1
+#, fuzzy
+msgctxt "resourcestr.rsdeleteandreplace_1"
+msgid "Notes at risk !"
+msgstr "Beveiligingsprobleem!"
+
+#: resourcestr.rsdeleteandreplace_2
+#, object-pascal-format
+msgctxt "resourcestr.rsdeleteandreplace_2"
+msgid "Delete all notes in %s and replace with snapshot dated %s ?"
+msgstr ""
+
+#: resourcestr.rsdeleteddamaged
+#, object-pascal-format
+msgid "OK, deleted %d damaged notes"
+msgstr ""
 
 #: resourcestr.rsenternewnotebook
 #, fuzzy
@@ -289,21 +219,15 @@ msgstr "Toon dit hulpbericht en sluit af."
 
 #: resourcestr.rshelplang
 msgctxt "resourcestr.rshelplang"
-msgid "Force Language, supported es, nl"
+msgid "Force Language, supported en, es, fr, nl"
 msgstr ""
 
 #: resourcestr.rshelpnosplash
 #, fuzzy
+#| msgid "Dont show small status/splash window"
 msgctxt "resourcestr.rshelpnosplash"
-msgid "Dont show small status/splash window"
+msgid "Do not show small status/splash window"
 msgstr "Geen klein status-/opstartscherm tonen"
-
-#: resourcestr.rshelpredhat
-#, fuzzy
-#| msgid "Run in RedHatGnome mode, no TrayIcon"
-msgctxt "resourcestr.rshelpredhat"
-msgid "Deprecated"
-msgstr "Uitvoeren in RedHatGnome-modus, zonder systeemvakpictogram"
 
 #: resourcestr.rshelpsaveexit
 msgctxt "resourcestr.rshelpsaveexit"
@@ -391,11 +315,23 @@ msgctxt "resourcestr.rsnewerversionexits"
 msgid "A newer version exists in main repo"
 msgstr "Er is een nieuwere versie aanwezig in de hoofdrepo"
 
+#: resourcestr.rsnotavailable
+msgid "Not Available"
+msgstr ""
+
 #: resourcestr.rsnotealreadyinrepo
 #, fuzzy
 msgctxt "resourcestr.rsnotealreadyinrepo"
 msgid "Note already in Repo"
 msgstr "Deze notitie bestaat al"
+
+#: resourcestr.rsnotebookoptionctrl
+msgid "Ctrl click for Notebook Options"
+msgstr ""
+
+#: resourcestr.rsnotebookoptionright
+msgid "Right click for Notebook Options"
+msgstr ""
 
 #: resourcestr.rsnotebooks
 msgctxt "resourcestr.rsnotebooks"
@@ -416,6 +352,12 @@ msgstr ""
 #: resourcestr.rsnotesdeleted
 msgid "Note or notes deleted"
 msgstr ""
+
+#: resourcestr.rsnotesinsnap
+#, fuzzy
+msgctxt "resourcestr.rsnotesinsnap"
+msgid "Notes in Snapshot"
+msgstr "Notities in momentopname"
 
 #: resourcestr.rsnotpresent
 #, fuzzy
@@ -459,6 +401,10 @@ msgctxt "resourcestr.rsrenamefailed"
 msgid "ERROR, could not rename Backup File "
 msgstr "FOUT: kan naam van back-upbestand niet wijzigen"
 
+#: resourcestr.rsrollbackintro
+msgid "You can roll back to previous version of this note"
+msgstr ""
+
 #: resourcestr.rsrunningsync
 #, fuzzy
 msgctxt "resourcestr.rsrunningsync"
@@ -474,6 +420,10 @@ msgstr "Als dit in orde is, klik dan op 'Opslaan en synchroniseren'"
 #: resourcestr.rssearchhint
 msgctxt "resourcestr.rssearchhint"
 msgid "Exact matches for terms between \" \""
+msgstr ""
+
+#: resourcestr.rssearchnavhint
+msgid "Search : Previous Shift-Alt-F   Next Alt-F"
 msgstr ""
 
 #: resourcestr.rssetthenotebooks
@@ -505,8 +455,9 @@ msgstr "Aangemaakt. Wil je ergens een kopie opslaan?"
 
 #: resourcestr.rssyncerror
 #, fuzzy
+#| msgid "A Sync Error occured"
 msgctxt "resourcestr.rssyncerror"
-msgid "A Sync Error occured"
+msgid "A Sync Error occurred"
 msgstr "Synchronisatiefout"
 
 #: resourcestr.rssyncnotconfig
@@ -527,6 +478,15 @@ msgctxt "resourcestr.rstestingsync"
 msgid "Testing Sync"
 msgstr "Bezig met testen van synchronisatie..."
 
+#: resourcestr.rstryrecover_1
+msgid "Try to recover a bad note by double clicking below,"
+msgstr ""
+
+#: resourcestr.rstryrecover_2
+msgctxt "resourcestr.rstryrecover_2"
+msgid "if that fails, you may be able to recover it from a Snapshot."
+msgstr ""
+
 #: resourcestr.rsunabletoproceed
 #, fuzzy
 msgctxt "resourcestr.rsunabletoproceed"
@@ -538,6 +498,11 @@ msgstr "Kan niet doorgan vanwege"
 msgctxt "resourcestr.rsunabletosync"
 msgid "Unable to sync because "
 msgstr "Kan niet synchroniseren vanwege"
+
+#: resourcestr.rswehavesnapshots
+#, object-pascal-format
+msgid "We have %d snapshots"
+msgstr ""
 
 #: settings.rsdictionaryfailed
 msgid "Library Not Loaded"
@@ -552,7 +517,9 @@ msgid "No Dictionary Found"
 msgstr "Geen woordenboek aangetroffen"
 
 #: settings.rsdirhasnonotes
-msgid "That directory does not contain any notes. Thats OK, if I can make my own there."
+#, fuzzy
+#| msgid "That directory does not contain any notes. Thats OK, if I can make my own there."
+msgid "That directory does not contain any notes. That is OK, if I can make my own there."
 msgstr "Deze map bevat geen notities. Dat is niet erg, want nu kan deze worden gebruikt voor nieuwe notities."
 
 #: settings.rserrorcannotwrite
@@ -570,10 +537,6 @@ msgstr "Kies de te gebruiken map"
 #: settings.rsselectlibrary
 msgid "Select your hunspell library"
 msgstr "Kies een hunspell-bibliotheek"
-
-#: settings.rssetfilesyncrepo
-msgid "Set File Sync Repo"
-msgstr "Bestandssynchronisatie instellen"
 
 #: spelling.rscheckingfull
 msgid "Checking full document"
@@ -658,176 +621,197 @@ msgstr ""
 
 #: teditboxform.caption
 msgid "EditBoxForm"
-msgstr "EditBoxForm"
+msgstr ""
+
+#: teditboxform.editsearch.text
+msgid "EditSearch"
+msgstr ""
 
 #: teditboxform.label2.caption
 msgid "Read Only"
-msgstr "Alleen-lezen"
+msgstr ""
 
 #: teditboxform.label3.caption
 msgid "This note has been changed by the Sync Process"
-msgstr "Deze notitie is aangepast door het synchronisatieproces"
+msgstr ""
 
 #: teditboxform.label4.caption
 msgid "Please close it (and re-open if it was a download)"
-msgstr "Sluit de notitie (en heropen deze als je hem gedownload hebt)"
+msgstr ""
+
+#: teditboxform.labelsearchinfo.caption
+msgid "LabelSearchInfo"
+msgstr ""
 
 #: teditboxform.menubold.caption
 msgid "Bold"
-msgstr "Vetgedrukt"
+msgstr ""
 
 #: teditboxform.menubullet.caption
 msgid "Bullet"
-msgstr "Rondje"
+msgstr ""
+
+#: teditboxform.menufindnext.caption
+msgid "Find Next"
+msgstr ""
 
 #: teditboxform.menufixedwidth.caption
 msgid "Fixed Width"
-msgstr "Vaste breedte"
+msgstr ""
 
 #: teditboxform.menuhighlight.caption
 msgctxt "teditboxform.menuhighlight.caption"
 msgid "Highlight"
-msgstr "Markeren"
+msgstr ""
 
 #: teditboxform.menuhuge.caption
 msgctxt "teditboxform.menuhuge.caption"
 msgid "Huge"
-msgstr "Enorm"
+msgstr ""
 
 #: teditboxform.menuitalic.caption
 msgid "Italic"
-msgstr "Cursief"
+msgstr ""
 
 #: teditboxform.menuitem4.caption
 msgid "Alt+Right to add, Alt+Left to remove"
-msgstr "Alt+pijltje naar rechts = toevoegen /// Alt+pijltje naar links = verwijderen"
+msgstr ""
 
 #: teditboxform.menuitemcopy.caption
 msgid "Copy"
-msgstr "Kopiëren"
+msgstr ""
 
 #: teditboxform.menuitemcut.caption
 msgid "Cut"
-msgstr "Knippen"
+msgstr ""
 
 #: teditboxform.menuitemdelete.caption
 msgctxt "teditboxform.menuitemdelete.caption"
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr ""
 
 #: teditboxform.menuitemevaluate.caption
 msgid "Evaluate"
-msgstr "Evalueren"
+msgstr ""
 
 #: teditboxform.menuitemexport.caption
 msgid "Export"
-msgstr "Exporteren"
+msgstr ""
 
 #: teditboxform.menuitemexportmarkdown.caption
 msgid "Export Markdown"
-msgstr "Markdown exporteren"
+msgstr ""
 
 #: teditboxform.menuitemexportplaintext.caption
 msgid "Export Plain Text"
-msgstr "Platte tekst exporteren"
+msgstr ""
 
 #: teditboxform.menuitemexportrtf.caption
 msgid "Export RTF"
-msgstr "RTF exporteren"
+msgstr ""
 
 #: teditboxform.menuitemfind.caption
 msgid "Find in this Note"
-msgstr "Notitie doorzoeken"
+msgstr ""
 
 #: teditboxform.menuitemindex.caption
 msgid "Index"
-msgstr "Index"
+msgstr ""
 
 #: teditboxform.menuitempaste.caption
 msgid "Paste"
-msgstr "Plakken"
+msgstr ""
 
 #: teditboxform.menuitemprint.caption
 msgid "Print"
-msgstr "Afdrukken"
+msgstr ""
 
 #: teditboxform.menuitemselectall.caption
 msgid "Select All"
-msgstr "Alles selecteren"
+msgstr ""
 
 #: teditboxform.menuitemsettings.caption
 msgctxt "teditboxform.menuitemsettings.caption"
 msgid "Settings"
-msgstr "Instellingen"
+msgstr ""
 
 #: teditboxform.menuitemspell.caption
 msgid "Spell Check"
-msgstr "Spellingcontrole"
+msgstr ""
 
 #: teditboxform.menuitemsync.caption
-msgid "Syncronize"
-msgstr "Synchroniseren"
+msgid "Synchronize"
+msgstr ""
 
 #: teditboxform.menularge.caption
 msgid "Large Font"
-msgstr "Groot lettertype"
+msgstr ""
 
 #: teditboxform.menunormal.caption
 msgid "Normal Font"
-msgstr "Normaal lettertype"
+msgstr ""
 
 #: teditboxform.menusmall.caption
 msgid "Small Font"
-msgstr "Klein lettertype"
+msgstr ""
+
+#: teditboxform.menustayontop.caption
+msgid "Stay On Top"
+msgstr ""
 
 #: teditboxform.menustrikeout.caption
 msgid "Strikeout"
-msgstr "Doorhalen"
+msgstr ""
 
 #: teditboxform.menuunderline.caption
 msgid "Underline"
-msgstr "Onderstrepen"
+msgstr ""
+
+#: teditboxform.panelsearch.caption
+msgid "PanelSearch"
+msgstr ""
 
 #: teditboxform.speedbuttondelete.hint
 msgid "Delete this note"
-msgstr "Deze notitie verwijderen"
+msgstr ""
 
 #: teditboxform.speedbuttonlink.hint
 msgid "Link highlighted text to a new note"
-msgstr "Gemarkeerde tekst koppelen aan nieuwe notitie"
+msgstr ""
 
 #: teditboxform.speedbuttonnotebook.hint
 msgid "Manage Notebooks"
-msgstr "Notitieboeken beheren"
+msgstr ""
 
 #: teditboxform.speedbuttonsearch.hint
 msgid "Search All Notes Ctrl-Shift-F"
-msgstr "Alle notities doorzoeken (Ctrl+Shift+F)"
+msgstr ""
 
 #: teditboxform.speedbuttontext.hint
 msgid "Font size, bold, italics etc"
-msgstr "Lettergrootte, vetgedrukt, cursief, etc."
+msgstr ""
 
 #: teditboxform.speedbuttontools.hint
 msgid "Tools - Sync, Export, Spell"
-msgstr "Hulpmiddelen - synchroniseren, exporteren, spellingcontrole"
+msgstr ""
+
+#: teditboxform.speedrollback.hint
+msgid "Roll Back"
+msgstr ""
 
 #: tformbackupview.buttondelete.caption
-#, fuzzy
 msgctxt "tformbackupview.buttondelete.caption"
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr ""
 
 #: tformbackupview.buttondelete.hint
 msgid "Really, totally delete this note."
 msgstr ""
 
 #: tformbackupview.buttonok.caption
-#, fuzzy
-#| msgid "OK"
 msgctxt "tformbackupview.buttonok.caption"
 msgid "Close"
-msgstr "Oké"
+msgstr ""
 
 #: tformbackupview.buttonok.hint
 msgid "My work here is done."
@@ -842,10 +826,9 @@ msgid "Open and view the whole note"
 msgstr ""
 
 #: tformbackupview.buttonrecover.caption
-#, fuzzy
 msgctxt "tformbackupview.buttonrecover.caption"
 msgid "Recover"
-msgstr "Herstellen"
+msgstr ""
 
 #: tformbackupview.buttonrecover.hint
 msgid "Restore this note to main repo"
@@ -873,35 +856,29 @@ msgid "Set Colours"
 msgstr ""
 
 #: tformcolours.speedbackground.caption
-msgctxt "tformcolours.speedbackground.caption"
 msgid "Background"
 msgstr ""
 
 #: tformcolours.speedcancel.caption
-#, fuzzy
 msgctxt "tformcolours.speedcancel.caption"
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr ""
 
 #: tformcolours.speeddefault.caption
-msgctxt "tformcolours.speeddefault.caption"
 msgid "Default"
 msgstr ""
 
 #: tformcolours.speedhighlight.caption
-#, fuzzy
 msgctxt "tformcolours.speedhighlight.caption"
 msgid "Highlight"
-msgstr "Markeren"
+msgstr ""
 
 #: tformcolours.speedok.caption
-#, fuzzy
 msgctxt "tformcolours.speedok.caption"
 msgid "OK"
-msgstr "Oké"
+msgstr ""
 
 #: tformcolours.speedtext.caption
-msgctxt "tformcolours.speedtext.caption"
 msgid "Text"
 msgstr ""
 
@@ -909,28 +886,6 @@ msgstr ""
 msgctxt "tformcolours.speedtitle.caption"
 msgid "Title"
 msgstr ""
-
-#: tformhelpnotes.buttonclose.caption
-msgctxt "tformhelpnotes.buttonclose.caption"
-msgid "Close"
-msgstr "Sluiten"
-
-#: tformhelpnotes.buttonrestore.caption
-msgid "Restore English"
-msgstr "Engels herstellen"
-
-#: tformhelpnotes.caption
-msgctxt "tformhelpnotes.caption"
-msgid "Help Notes Language"
-msgstr "Taal van hulpnotities"
-
-#: tformhelpnotes.label1.caption
-msgid "Double click a Language below"
-msgstr "Dubbelklik hieronder op een taal"
-
-#: tformhelpnotes.label2.caption
-msgid "Contact author if you can help translate."
-msgstr "Neem contact op met de ontwikkelaar als je bereid bent te helpen vertalen."
 
 #: tformindex.caption
 msgid "Heading in this Note"
@@ -941,20 +896,18 @@ msgid "Single lines, all Huge, Large Bold or Large"
 msgstr ""
 
 #: tformmarkdown.buttonclose.caption
-#, fuzzy
 msgctxt "tformmarkdown.buttonclose.caption"
 msgid "Close"
-msgstr "Sluiten"
+msgstr ""
 
 #: tformmarkdown.buttoncopyall.caption
 msgid "Copy All"
 msgstr ""
 
 #: tformmarkdown.buttonsave.caption
-#, fuzzy
 msgctxt "tformmarkdown.buttonsave.caption"
 msgid "Save"
-msgstr "Opslaan"
+msgstr ""
 
 #: tformmarkdown.label1.caption
 msgid "Press Ctrl-A, Ctrl-C to copy"
@@ -964,121 +917,119 @@ msgstr ""
 msgid "Markdown Exporter"
 msgstr ""
 
-#: tformrecover.button4.caption
-msgid "Restore from Safety Snapshot"
-msgstr "Herstellen uit back-upmomentopname"
-
 #: tformrecover.buttondeletebadnotes.caption
 msgid "Delete Bad Notes"
-msgstr "Onjuiste notities verwijderen"
+msgstr ""
 
 #: tformrecover.buttonmakesafetysnap.caption
-msgid "Safety Snapshot"
-msgstr "Back-upmomentopname"
+msgid "Take a manual Snapshot"
+msgstr ""
 
 #: tformrecover.buttonmakesafetysnap.hint
 msgid "Take a initial snapshot of your notes and config. Overwritten each time."
-msgstr "Maak een momentopname van je notities en configuratie. Deze wordt telkens overschreven."
+msgstr ""
 
 #: tformrecover.buttonrecoversnap.caption
 msgctxt "tformrecover.buttonrecoversnap.caption"
 msgid "Recover"
-msgstr "Herstellen"
+msgstr ""
 
 #: tformrecover.buttonsnaphelp.caption
-#, fuzzy
-#| msgid "Help"
-msgctxt "tformrecover.buttonsnaphelp.caption"
 msgid "Snapshot Help"
-msgstr "Hulp"
+msgstr ""
 
 #: tformrecover.caption
 msgid "FormRecover"
-msgstr "Herstelpagina"
+msgstr ""
 
 #: tformrecover.label10.caption
 msgid "Please close any notes you may have open."
-msgstr "Sluit alle geopende notities."
-
-#: tformrecover.label11.caption
-msgid "or you do one of -"
-msgstr "Of doe één van de volgende dingen:"
+msgstr ""
 
 #: tformrecover.label12.caption
-msgid "Don't even consider this unless you have a recent Safety Snapshot, Intro Tab."
-msgstr "Overweeg dit niet als je geen recente back-upmomentopname hebt."
+msgid "Don't even consider this unless you have a backup Snapshot, Intro Tab."
+msgstr ""
 
 #: tformrecover.label14.caption
-msgid "Double click an available snapshot to see its contents."
-msgstr "Dubbelklik op een beschikbare momentopname om de inhoud ervan te bekijken."
+msgid "Click an available snapshot to see its contents."
+msgstr ""
 
 #: tformrecover.label15.caption
-msgid "Double click an available snapshot, click Recover"
-msgstr "Dubbelklik op een beschikbare momentopname, en klik daarna op 'Herstellen'"
+msgid "Click an available snapshot, click Recover"
+msgstr ""
 
 #: tformrecover.label16.caption
 msgid "You may chose to view, copy and paste into a new note."
-msgstr "Je kunt kiezen een nieuwe notitie te bekijken, of te kopiëren en plakken naar."
+msgstr ""
 
 #: tformrecover.label2.caption
-msgid "Please be carefull, this is a dangerous place!"
-msgstr "Let op: alles hier is zeer gevaarlijk!"
+msgid "Please be careful, this is a dangerous place!"
+msgstr ""
 
 #: tformrecover.label3.caption
 msgid "Restore any notes in the snapshot that are not in the existing notes directory."
-msgstr "Herstel de notities uit de momentopname die ontbreken in de bestaande notitiemap."
+msgstr ""
 
 #: tformrecover.label4.caption
 msgid "Remove all existing notes and use the ones in the Snapshot."
-msgstr "Verwijder alle bestaande notities en gebruik de notities uit de momentopname."
+msgstr ""
 
 #: tformrecover.label5.caption
-msgid "Look firstly at your existing notes"
-msgstr "Kijk eerst naar je bestaande notities"
+msgid "Looking for notes with damaged XML"
+msgstr ""
 
 #: tformrecover.label6.caption
 msgid "This tool might help you recover lost or damaged notes."
-msgstr "Dit hulpmiddel helpt je kwijtgeraakte of beschadigde notities te herstellen."
+msgstr ""
 
 #: tformrecover.label7.caption
-msgid "Before you start, take a Safety Snapshot of your notes directory."
-msgstr "Maak, voordat je begint, een back-upmomentopname van je notitiemap."
-
-#: tformrecover.label8.caption
-msgid "Don't take repeated Safety Snapshots as each overwrites the previous one."
-msgstr "Doe dit niet te vaak, want nieuwe momentopnamen overschrijven de oude."
+msgid "Before you start, take a Snapshot of your notes directory."
+msgstr ""
 
 #: tformrecover.label9.caption
 msgid "From here you can view snapshot notes, one by one."
-msgstr "Hier kun je één voor één momentopnamenotities bekijken."
+msgstr ""
 
 #: tformrecover.listboxsnapshots.hint
 msgid "These are the currently known snapshots. "
-msgstr "Dit zijn de bekende momentopnamen."
+msgstr ""
 
 #: tformrecover.panelsnapshots.caption
 msgid "Available Snapshots"
-msgstr "Beschikbare momentopnamen"
+msgstr ""
 
-#: tformrecover.tabsheetexisting.caption
-msgid "Existing Notes"
-msgstr "Bestaande notities"
+#: tformrecover.tabsheetbadnotes.caption
+msgid "Bad Notes"
+msgstr ""
 
 #: tformrecover.tabsheetintro.caption
 msgid "Introduction"
-msgstr "Inleiding"
+msgstr ""
 
 #: tformrecover.tabsheetmergesnapshot.caption
 msgid "Merge Snapshot"
-msgstr "Momentopname samenvoegen"
+msgstr ""
+
+#: tformrecover.tabsheetrecovernotes.caption
+msgid "Recover Notes"
+msgstr ""
 
 #: tformrecover.tabsheetrecoversnapshot.caption
 msgid "Recover Snapshot"
-msgstr "Momentopname herstellen"
+msgstr ""
 
-#: tformrecover.tabsheetsnapshots.caption
-msgid "Notes in a Snapshot"
-msgstr "Notities in momentopname"
+#: tformrollback.speedcancel.caption
+msgctxt "tformrollback.speedcancel.caption"
+msgid "Cancel"
+msgstr ""
+
+#: tformrollback.speedrolltoopen.caption
+msgid "Opening Backup"
+msgstr ""
+
+#: tformrollback.speedrolltotitle.caption
+msgid "Title Change Backup"
+msgstr ""
 
 #: tformsdiff.bitbtnuselocal.caption
 msgid "Use Local"
@@ -1120,14 +1071,6 @@ msgstr ""
 msgid "Local Changed"
 msgstr ""
 
-#: tformsdiff.labellocal.caption
-msgid "LabelLocal"
-msgstr ""
-
-#: tformsdiff.labelremote.caption
-msgid "LabelRemote"
-msgstr ""
-
 #: tformsdiff.radiolong.caption
 msgid "Long Lines"
 msgstr ""
@@ -1165,10 +1108,9 @@ msgid "Use and Next Word"
 msgstr ""
 
 #: tformspell.caption
-#, fuzzy
 msgctxt "tformspell.caption"
 msgid "Spell"
-msgstr "Spellingcontrole"
+msgstr ""
 
 #: tformspell.label4.caption
 msgid "Suspect word -"
@@ -1181,29 +1123,40 @@ msgstr ""
 #: tformsync.buttoncancel.caption
 msgctxt "tformsync.buttoncancel.caption"
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr ""
 
 #: tformsync.buttonclose.caption
 msgctxt "tformsync.buttonclose.caption"
 msgid "Close"
-msgstr "Sluiten"
+msgstr ""
 
 #: tformsync.buttonsave.caption
 msgid "Save and Sync"
-msgstr "Opslaan en synchroniseren"
+msgstr ""
 
 #: tformsync.caption
 msgctxt "tformsync.caption"
 msgid "Sync"
-msgstr "Synchroniseren"
+msgstr ""
+
+#: tformsync.listviewreport.columns[0].caption
+msgid "Action"
+msgstr ""
+
+#: tformsync.listviewreport.columns[1].caption
+msgctxt "tformsync.listviewreport.columns[1].caption"
+msgid "Title"
+msgstr ""
+
+#: tformsync.listviewreport.columns[2].caption
+msgid "Note ID"
+msgstr ""
 
 #: tformsyncerror.buttcancel.hint
-msgctxt "tformsyncerror.buttcancel.hint"
 msgid "Stop Auto Sync until next restart"
 msgstr ""
 
 #: tformsyncerror.buttretry.hint
-msgctxt "tformsyncerror.buttretry.hint"
 msgid "If Shared Drive is available, try again."
 msgstr ""
 
@@ -1214,77 +1167,86 @@ msgstr ""
 #: tformtomdroid.buttonclose.caption
 msgctxt "tformtomdroid.buttonclose.caption"
 msgid "Close"
-msgstr "Sluiten"
+msgstr ""
 
 #: tformtomdroid.buttondelete.caption
 msgid "Delete Profile"
-msgstr "Profiel verwijderen"
+msgstr ""
 
 #: tformtomdroid.buttonhelp.caption
 msgctxt "tformtomdroid.buttonhelp.caption"
 msgid "Help"
-msgstr "Hulp"
+msgstr ""
 
 #: tformtomdroid.buttonjoin.caption
 msgid "Join"
-msgstr "Deelnemen"
+msgstr ""
 
 #: tformtomdroid.buttonsaveprofile.caption
 msgid "Save Profile"
-msgstr "Profiel opslaan"
+msgstr ""
 
 #: tformtomdroid.buttonsync.caption
 msgctxt "tformtomdroid.buttonsync.caption"
 msgid "Sync"
-msgstr "Synchroniseren"
+msgstr ""
 
 #: tformtomdroid.caption
 msgid "Tomdroid"
-msgstr "Tomdroid"
+msgstr ""
 
 #: tformtomdroid.checkboxdebugmode.caption
 msgid "Debug Mode"
-msgstr "Foutopsporingsmodus"
+msgstr ""
 
 #: tformtomdroid.checkboxdebugmode.hint
 msgid "writes debug messages to terminal"
-msgstr "toont foutopsporingsberichten in een terminalvenster"
+msgstr ""
 
 #: tformtomdroid.checkboxtestrun.caption
 msgid "Test Run"
-msgstr "Proefdraaien"
+msgstr ""
 
 #: tformtomdroid.checksavepassword.caption
 msgctxt "tformtomdroid.checksavepassword.caption"
 msgid "Save"
-msgstr "Opslaan"
+msgstr ""
 
 #: tformtomdroid.editprofilename.hint
 msgid "eg MySamsungNote7"
-msgstr "bijv. MijnSamsungNote7"
+msgstr ""
 
 #: tformtomdroid.label1.caption
-msgid "Tomdroid Sync - be aware of limitations !"
-msgstr "Tomdroid-synchronisatie - wees je bewust van de beperkingen!"
+msgid "Tomdroid SSH Sync - deprecated, will be dropped soon."
+msgstr ""
 
 #: tformtomdroid.label2.caption
 msgid "Select an existing profile (or enter data) "
-msgstr "Kies een bestaand profiel (of voer gegevens in) "
+msgstr ""
 
 #: tformtomdroid.label3.caption
 msgid "Profile Name"
-msgstr "Profielnaam"
+msgstr ""
 
 #: tformtomdroid.label4.caption
 msgid "IP address of device"
-msgstr "IP-adres of apparaat"
+msgstr ""
 
 #: tformtomdroid.label5.caption
 msgid "SSH Password for device"
-msgstr "SSH-wachtwoord van apparaat"
+msgstr ""
 
 #: tformtomdroid.label6.caption
 msgid "Upload means from tomboy-ng to Android Device"
+msgstr ""
+
+#: tmainform.bitbtnhide.caption
+msgid "Hide"
+msgstr ""
+
+#: tmainform.bitbtnquit.caption
+msgctxt "tmainform.bitbtnquit.caption"
+msgid "Quit"
 msgstr ""
 
 #: tmainform.buttmenu.caption
@@ -1292,107 +1254,66 @@ msgctxt "tmainform.buttmenu.caption"
 msgid "Menu"
 msgstr ""
 
-#: tmainform.buttonclose.caption
-#, fuzzy
-#| msgid "Close"
-msgctxt "tmainform.buttonclose.caption"
-msgid "Quit"
-msgstr "Sluiten"
-
-#: tmainform.buttonclose.hint
-msgid "Close tomboy-ng"
+#: tmainform.buttsystrayhelp.caption
+msgid "SysTray Help"
 msgstr ""
-
-#: tmainform.buttondismiss.caption
-#, fuzzy
-#| msgid "Dismiss"
-msgid "Hide"
-msgstr "Verwerpen"
-
-#: tmainform.buttondismiss.hint
-msgid "Dismiss this window but leave tomboy-ng running"
-msgstr "Verwerp dit venster, maar houdt tomboy-ng draaiende"
 
 #: tmainform.caption
 msgid "tomboy-ng"
-msgstr "tomboy-ng"
+msgstr ""
 
 #: tmainform.checkboxdontshow.caption
 msgid "Don't Show for normal startup"
-msgstr "Niet tonen bij normaal opstarten"
+msgstr ""
 
 #: tmainform.checkboxdontshow.hint
 msgid "You can reverse this from Settings"
-msgstr "Je kunt dit aanpassen in de instellingen"
+msgstr ""
 
 #: tmainform.hint
 msgid "If the green tomboy-ng icon is visible in your System Tray, you can dismiss this window."
-msgstr "Als het groene tomboy-ng-pictogram zichtbaar is in het systeemvak, dan kun je dit venster verwerpen."
+msgstr ""
 
 #: tmainform.label1.caption
 msgid "Have Config"
-msgstr "Configuratie aanwezig"
+msgstr ""
 
 #: tmainform.label3.caption
 msgid "Dictionary Config (optional)"
-msgstr "Woordenboekconfiguraite (optioneel)"
+msgstr ""
 
 #: tmainform.label4.caption
 msgid "Sync Config (optional)"
-msgstr "Synchronisatieconfiguratie (optioneel)"
+msgstr ""
 
 #: tmainform.label5.caption
 msgid "Welcome to tomboy-ng !"
-msgstr "Welkom bij tomboy-ng!"
-
-#: tmainform.label6.caption
-#, fuzzy
-#| msgid "Lets See if we are ready to go -"
-msgid "Lets see if we are ready to go -"
-msgstr "Eens zien of de toepassing klaar is voor gebruik"
-
-#: tmainform.labelbadnoteadvice.caption
-msgid "LabelBadNoteAdvice"
 msgstr ""
-
-#: tmainform.labelerror.caption
-msgctxt "tmainform.labelerror.caption"
-msgid "X"
-msgstr "X"
 
 #: tmainform.labelerror.hint
 msgid "Launch from commandline to see errors or see Config->SnapShot->Recover ..."
-msgstr "Start tomboy-ng vanuit een terminalvenster om fouten te bekijken op zie Instellingen->Momentopname->Herstellen"
-
-#: tmainform.labelnotesfound.caption
-msgctxt "tmainform.labelnotesfound.caption"
-msgid "X"
-msgstr "X"
+msgstr ""
 
 #: tnotebookpick.button1.caption
 msgctxt "tnotebookpick.button1.caption"
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr ""
 
 #: tnotebookpick.buttonok.caption
 msgctxt "tnotebookpick.buttonok.caption"
 msgid "OK"
-msgstr "Oké"
+msgstr ""
 
 #: tnotebookpick.label4.caption
 msgid "Name of the New Notebook"
-msgstr "Naam van het nieuwe notitieboek"
+msgstr ""
 
 #: tnotebookpick.label5.caption
 msgid "Press OK and we will make the Note Book AND add this note to it."
-msgstr "Klik op 'Oké' om het notitieboek te maken EN deze notitie er aan toe te voegen."
+msgstr ""
 
 #: tnotebookpick.label6.caption
 msgid "Existing Name"
-msgstr ""
-
-#: tnotebookpick.label7.caption
-msgid "Label7"
 msgstr ""
 
 #: tnotebookpick.label8.caption
@@ -1400,7 +1321,7 @@ msgid "New Name"
 msgstr ""
 
 #: tnotebookpick.label9.caption
-msgid "If you sync and are not absolutly sure its up to date, Cancel now !"
+msgid "If you sync and are not absolutely sure its up to date, Cancel now !"
 msgstr ""
 
 #: tnotebookpick.tabchangename.caption
@@ -1409,135 +1330,215 @@ msgstr ""
 
 #: tnotebookpick.tabexisting.caption
 msgid "Existing Note Books"
-msgstr "Bestaande notitieboeken"
+msgstr ""
 
 #: tnotebookpick.tabnewnotebook.caption
 msgid "New Note Book"
-msgstr "Nieuw notitieboek"
+msgstr ""
 
 #: tomdroid.rscheckingforexistingsync
+msgctxt "tomdroid.rscheckingforexistingsync"
 msgid "Checking for an existing sync ...."
-msgstr "Bezig met controleren op synchronisatie..."
+msgstr ""
 
 #: tomdroid.rsconnectiongood
+msgctxt "tomdroid.rsconnectiongood"
 msgid "Connection is looking Good."
-msgstr "De verbinding is goed."
+msgstr ""
 
 #: tomdroid.rsfailedtoconnect
+msgctxt "tomdroid.rsfailedtoconnect"
 msgid "Failed to connect."
-msgstr "Kan niet vebinden."
+msgstr ""
 
 #: tomdroid.rsfailedtofindconnection_1
+msgctxt "tomdroid.rsfailedtofindconnection_1"
 msgid "Failed to find an existing connection."
-msgstr "Geen bestaande verbinding aangetroffen."
+msgstr ""
 
 #: tomdroid.rsfailedtofindconnection_2
+msgctxt "tomdroid.rsfailedtofindconnection_2"
 msgid "If you are sure there should be an existing connection, check settings."
-msgstr "Als je er zeker van bent dat er een verbinding moet zijn, controleer dan de instellingen."
+msgstr ""
 
 #: tomdroid.rsfailedtofindconnection_3
+msgctxt "tomdroid.rsfailedtofindconnection_3"
 msgid "Otherwise, try joining a new connection."
-msgstr "Probeer anders een nieuwe verbinding op te zetten."
+msgstr ""
 
 #: tomdroid.rsfixconnection
+msgctxt "tomdroid.rsfixconnection"
 msgid "If you are sure its there, check settings."
-msgstr "Als je er zeker van bent dat deze er is, controleer dan de instellingen."
+msgstr ""
 
 #: tomdroid.rshavevalidsync
+msgctxt "tomdroid.rshavevalidsync"
 msgid "Looking Good. Last sync date "
-msgstr "In orde. Laatste synchronisatiedatum "
+msgstr ""
 
 #: tomdroid.rsinstalltomdroid
+msgctxt "tomdroid.rsinstalltomdroid"
 msgid "Install Tomdroid, config filesync, and run a sync"
-msgstr "Installeer Tomdroid, stel bestandssynchronisatie in en voer deze uit"
+msgstr ""
 
 #: tomdroid.rsnoconnection
+msgctxt "tomdroid.rsnoconnection"
 msgid "Failed to establish a connection. "
-msgstr "Kan geen verbinding maken."
+msgstr ""
 
 #: tomdroid.rsnotcorrectprofile
+msgctxt "tomdroid.rsnotcorrectprofile"
 msgid "This is not correct profile for that device"
-msgstr "Dit profiel hoort niet bij dat apparaat"
+msgstr ""
 
 #: tomdroid.rsnotexistingrepo
+msgctxt "tomdroid.rsnotexistingrepo"
 msgid "That's not an existing Repo, maybe click \"Join\" ?"
-msgstr "Die repo bestaat niet; klik op 'Deelnemen'."
+msgstr ""
 
 #: tomdroid.rsnotomdroid
+msgctxt "tomdroid.rsnotomdroid"
 msgid "Unable to find Tomdroid sync dir on that device."
-msgstr "De Tomdroid-synchronisatiemap is niet aanwezig op dat apparaat."
+msgstr ""
 
 #: tomdroid.rsselectprofile
 msgid "Select a profile"
-msgstr "Kies een profiel"
+msgstr ""
 
 #: tomdroid.rssetupnewsync
+msgctxt "tomdroid.rssetupnewsync"
 msgid "Setting up a new sync ...."
-msgstr "Bezig met instellen van synchronisatie..."
+msgstr ""
 
 #: tomdroid.rstalking
 msgctxt "tomdroid.rstalking"
 msgid "OK, talking to device. Wait for it ...."
-msgstr "Bezig met verbinding maken met apparaat..."
+msgstr ""
 
 #: tomdroid.rstalkingtodevice
 msgctxt "tomdroid.rstalkingtodevice"
+msgid "OK, talking to device. Wait for it ...."
+msgstr ""
+
+#: tomdroidfile.rsconnectiongood
+#, fuzzy
+msgctxt "tomdroidfile.rsconnectiongood"
+msgid "Connection is looking Good."
+msgstr "De verbinding is goed."
+
+#: tomdroidfile.rsfailedtoconnect
+#, fuzzy
+msgctxt "tomdroidfile.rsfailedtoconnect"
+msgid "Failed to connect."
+msgstr "Kan niet vebinden."
+
+#: tomdroidfile.rsfailedtofindconnection_2
+#, fuzzy
+msgctxt "tomdroidfile.rsfailedtofindconnection_2"
+msgid "If you are sure there should be an existing connection, check settings."
+msgstr "Als je er zeker van bent dat er een verbinding moet zijn, controleer dan de instellingen."
+
+#: tomdroidfile.rsfixconnection
+#, fuzzy
+msgctxt "tomdroidfile.rsfixconnection"
+msgid "If you are sure its there, check settings."
+msgstr "Als je er zeker van bent dat deze er is, controleer dan de instellingen."
+
+#: tomdroidfile.rshavevalidsync
+#, fuzzy
+msgctxt "tomdroidfile.rshavevalidsync"
+msgid "Looking Good. Last sync date "
+msgstr "In orde. Laatste synchronisatiedatum "
+
+#: tomdroidfile.rsinstalltomdroid
+#, fuzzy
+msgctxt "tomdroidfile.rsinstalltomdroid"
+msgid "Install Tomdroid, config filesync, and run a sync"
+msgstr "Installeer Tomdroid, stel bestandssynchronisatie in en voer deze uit"
+
+#: tomdroidfile.rsjoinanyway
+msgid "Forcing a Join may \"recover\" some notes you thought you have deleted."
+msgstr ""
+
+#: tomdroidfile.rsnoconnection
+#, fuzzy
+msgctxt "tomdroidfile.rsnoconnection"
+msgid "Failed to establish a connection. "
+msgstr "Kan geen verbinding maken."
+
+#: tomdroidfile.rsnotcorrectprofile
+#, fuzzy
+msgctxt "tomdroidfile.rsnotcorrectprofile"
+msgid "This is not correct profile for that device"
+msgstr "Dit profiel hoort niet bij dat apparaat"
+
+#: tomdroidfile.rsnotexistingrepo
+#, fuzzy
+msgctxt "tomdroidfile.rsnotexistingrepo"
+msgid "That's not an existing Repo, maybe click \"Join\" ?"
+msgstr "Die repo bestaat niet; klik op 'Deelnemen'."
+
+#: tomdroidfile.rsnotomdroid
+#, fuzzy
+msgctxt "tomdroidfile.rsnotomdroid"
+msgid "Unable to find Tomdroid sync dir on that device."
+msgstr "De Tomdroid-synchronisatiemap is niet aanwezig op dat apparaat."
+
+#: tomdroidfile.rssetupnewsync
+#, fuzzy
+msgctxt "tomdroidfile.rssetupnewsync"
+msgid "Setting up a new sync ...."
+msgstr "Bezig met instellen van synchronisatie..."
+
+#: tomdroidfile.rstalking
+#, fuzzy
+msgctxt "tomdroidfile.rstalking"
 msgid "OK, talking to device. Wait for it ...."
 msgstr "Bezig met verbinding maken met apparaat..."
 
 #: tsearchform.buttonclearfilters.caption
 msgid "Clear Filters"
-msgstr "Filters wissen"
+msgstr ""
 
 #: tsearchform.buttonmenu.caption
 msgctxt "tsearchform.buttonmenu.caption"
 msgid "Menu"
 msgstr ""
 
-#: tsearchform.buttonnotebookoptions.caption
-msgid "Notebook Options"
-msgstr "Notitieboekinstellingen"
-
-#: tsearchform.buttonnotebookoptions.hint
-msgid "Manage the Notebooks"
-msgstr "Notitieboeken beheren"
-
 #: tsearchform.buttonrefresh.caption
 msgid "Refresh"
-msgstr "Verversen"
+msgstr ""
 
 #: tsearchform.buttonrefresh.hint
-#, fuzzy
-#| msgid "Re-index notes"
 msgid "Update Search Results"
-msgstr "Notities opnieuw indexeren"
+msgstr ""
 
 #: tsearchform.caption
-#, fuzzy
-#| msgid "Search Form"
 msgid "tomboy-ng_Search"
-msgstr "Zoekpagina"
+msgstr ""
+
+#: tsearchform.checkautorefresh.caption
+msgid "Auto Refresh"
+msgstr ""
 
 #: tsearchform.checkcasesensitive.caption
-#, fuzzy
-msgctxt "tsearchform.checkcasesensitive.caption"
 msgid "Case Sensitive"
-msgstr "Hoofdlettergevoelig"
+msgstr ""
 
 #: tsearchform.menudeletenotebook.caption
 msgid "Delete Notebook"
-msgstr "Notitieboek verwijderen"
+msgstr ""
 
 #: tsearchform.menueditnotebooktemplate.caption
 msgid "Edit Notebook Template"
-msgstr "Notitieboeksjabloon bewerken"
+msgstr ""
 
 #: tsearchform.menunewnotefromtemplate.caption
 msgid "Create New Note from Template"
-msgstr "Nieuwe notitie maken op basis van sjabloon"
+msgstr ""
 
 #: tsearchform.menurenamenotebook.caption
-msgid "Rename Note Book"
+msgid "Rename NoteBook"
 msgstr ""
 
 #: tsearchform.panel2.caption
@@ -1547,32 +1548,27 @@ msgstr ""
 
 #: tsett.buttdefaultnotedir.caption
 msgid "Use Default Notes Location"
-msgstr "Standaard notitielocatie gebruiken"
+msgstr ""
 
 #: tsett.buttdefaultnotedir.hint
 msgid "Will work for many new users"
-msgstr "Aanbevolen voor de meeste nieuwe gebruikers"
+msgstr ""
 
 #: tsett.buttonfixedfont.caption
 msgid "Fixed Font"
-msgstr "Vastebreedtelettertype"
+msgstr ""
 
 #: tsett.buttonfont.caption
 msgid "Usual Font"
-msgstr "Normaal lettertype"
-
-#: tsett.buttonhelpnotes.caption
-msgctxt "tsett.buttonhelpnotes.caption"
-msgid "Help Notes Language"
-msgstr "Taal van hulpnotities"
+msgstr ""
 
 #: tsett.buttonmanualsnap.caption
 msgid "Take a Manual Snapshot"
-msgstr "Handmatig een momentopname maken"
+msgstr ""
 
 #: tsett.buttonmanualsnap.hint
 msgid "Take a time stamped snapshot of notes and config"
-msgstr "Maak een momentopname, voorzien van tijdstempel, van de notities en instellingen"
+msgstr ""
 
 #: tsett.buttonsetcolours.caption
 msgctxt "tsett.buttonsetcolours.caption"
@@ -1581,107 +1577,91 @@ msgstr ""
 
 #: tsett.buttonsetdictionary.caption
 msgid "Set Dictionary"
-msgstr "Woordenboek instellen"
+msgstr ""
 
 #: tsett.buttonsetnotepath.caption
 msgid "Set Path to Note Files"
-msgstr "Pad van notitiebestanden instellen"
+msgstr ""
 
 #: tsett.buttonsetnotepath.hint
 msgid "If you have notes somewhere else"
-msgstr "Als je je notities elders opslaat"
+msgstr ""
 
 #: tsett.buttonsetspelllibrary.caption
 msgid "Set Spell Library"
-msgstr "Spellingcontrolebiblotheek instellen"
+msgstr ""
 
 #: tsett.buttonshowbackup.caption
 msgid "Show Me"
-msgstr "Laat me zien hoe"
+msgstr ""
 
 #: tsett.buttonsnaprecover.caption
 msgid "Recover Lost Notes"
-msgstr "Kwijtgeraakte notities herstellen"
+msgstr ""
 
 #: tsett.buttonsnaprecover.hint
 msgid "If you have previously taken a snapshot ..."
-msgstr "Als je al eens een momentopname hebt gemaakt"
+msgstr ""
 
 #: tsett.caption
-#, fuzzy
-#| msgid "Settings"
-msgctxt "tsett.caption"
 msgid "Form Caption"
-msgstr "Instellingen"
+msgstr ""
 
 #: tsett.checkautosnapenabled.caption
-msgctxt "tsett.checkautosnapenabled.caption"
 msgid "Use auto snapshots"
 msgstr ""
 
 #: tsett.checkautostart.caption
-msgctxt "tsett.checkautostart.caption"
 msgid "Autostart at Logon"
-msgstr "Automatisch opstarten"
+msgstr ""
 
 #: tsett.checkboxautosync.caption
-msgctxt "tsett.checkboxautosync.caption"
 msgid "Auto Sync"
 msgstr ""
 
 #: tsett.checkboxautosync.hint
-msgctxt "tsett.checkboxautosync.hint"
 msgid "Sync, if possible once an hour."
 msgstr ""
 
-#: tsett.checkcasesensitive.caption
-msgctxt "tsett.checkcasesensitive.caption"
-msgid "Case Sensitive"
-msgstr "Hoofdlettergevoelig"
-
 #: tsett.checkmanynotebooks.caption
 msgid "Allow a Note to be in Multiple Notebooks."
-msgstr "Toestaan dat notities kunnen worden geopend in meerdere notitieboeken"
+msgstr ""
 
 #: tsett.checkmanynotebooks.hint
-msgid "This may adversly affect tradional Tomboy, take care."
-msgstr "Dit kan de traditonele Tomboy in de war brengen. Wees dus voorzichtig!"
+msgid "This may adversly affect traditional Tomboy, take care."
+msgstr ""
 
 #: tsett.checkshowextlinks.caption
 msgid "Show External  Links"
-msgstr "Externe links tonen"
+msgstr ""
 
 #: tsett.checkshowintlinks.caption
 msgid "Show Internal Links"
-msgstr "Interne links tonen"
+msgstr ""
 
 #: tsett.checkshowsearchatstart.caption
 msgid "Show Search at Start"
-msgstr "Zoeken tonen na opstarten"
+msgstr ""
 
 #: tsett.checkshowsplash.caption
 msgid "Show Splash at Start"
-msgstr "Opstartscherm tonen"
+msgstr ""
 
 #: tsett.checkshowsplash.hint
 msgid "Always shown if error loading notes."
-msgstr "Deze wordt altijd getoond als er fouten zijn opgetreden tijdens het laden."
+msgstr ""
 
 #: tsett.checkshowtomdroid.caption
 msgid "Show Tomdroid Sync (experimental)"
-msgstr "Tomdroid-synchronisatie tonen (experimenteel)"
-
-#: tsett.groupbox1.caption
-msgid "Main Search Window is : "
-msgstr "Het hoofdzoekvenster is: "
+msgstr ""
 
 #: tsett.groupbox4.caption
 msgid "  Options  "
-msgstr "  Opties  "
+msgstr ""
 
 #: tsett.groupbox5.caption
 msgid "Font Size"
-msgstr "Lettergrootte"
+msgstr ""
 
 #: tsett.groupboxsync.caption
 msgid "  Sync  "
@@ -1689,40 +1669,39 @@ msgstr ""
 
 #: tsett.label1.caption
 msgid "Settings will be saved in :"
-msgstr "De instellingen worden opgeslagen in:"
+msgstr ""
 
 #: tsett.label10.caption
-msgctxt "tsett.label10.caption"
-msgid "Settings"
-msgstr "Instellingen"
+msgid "Help Notes Language"
+msgstr ""
+
+#: tsett.label11.caption
+msgid "Backup Files"
+msgstr ""
 
 #: tsett.label13.caption
 msgid "Spell Check requires the Hunspell Libraries and"
-msgstr "Spellingcontrole vereist de Hunspell-bibliotheken en"
+msgstr ""
 
 #: tsett.label14.caption
 msgid "an appropriate Hunspell Dictionary set."
-msgstr "het juiste Hunspell-woordenboek."
+msgstr ""
 
 #: tsett.label16.caption
-msgid "Maxium number of snapshots"
+msgid "Maximum number of snapshots"
 msgstr ""
 
 #: tsett.label2.caption
 msgid "Notes will be looked for and saved in :"
-msgstr "Notities worden gezocht en opgeslagen in:"
+msgstr ""
 
 #: tsett.label3.caption
-#, fuzzy
-#| msgid "When a conflict is detected between a local note and"
 msgid "When a conflict is detected between a local note and remote one :"
-msgstr "Als er een conflict is tussen een lokale notitie en"
+msgstr ""
 
 #: tsett.label4.caption
-#, fuzzy
-#| msgid "a note on the configured synchronisation server :"
 msgid "Repo : "
-msgstr "een notitie op de synchronisatieserver:"
+msgstr ""
 
 #: tsett.label5.caption
 msgid "Days per snapshot"
@@ -1730,25 +1709,24 @@ msgstr ""
 
 #: tsett.label6.caption
 msgid "Backup files are made when you delete a note or the sync system"
-msgstr "Er worden back-ups gemaakt zodra je een notitie of synchronisatie verwijdert"
+msgstr ""
 
 #: tsett.label7.caption
 msgid "is about to overwrite one. "
-msgstr "staat op het punt te overschrijven: "
+msgstr ""
 
 #: tsett.label8.caption
 msgid "They remain, for ever, unless you do something about them."
-msgstr "Ze worden permanent bewaard, tenzij je er iets aan doet."
+msgstr ""
 
 #: tsett.label9.caption
 msgid "A snaphot is a copy of your current note directory."
-msgstr "Een momentopname is een kopie van je huidige notitiemap."
+msgstr ""
 
 #: tsett.labelfilesync.caption
-#, fuzzy
 msgctxt "tsett.labelfilesync.caption"
 msgid "not configured"
-msgstr "niet ingesteld"
+msgstr ""
 
 #: tsett.labelfilesyncinfo1.caption
 msgid "LabelFileSyncInfo1"
@@ -1759,51 +1737,47 @@ msgid "LabelFileSyncInfo2"
 msgstr ""
 
 #: tsett.labelsnapdir.caption
-#, fuzzy
-#| msgid ".... and its not available just yet !"
 msgid "Snap dir"
-msgstr "... en is nog niet beschikbaar!"
+msgstr ""
 
 #: tsett.radioalwaysask.caption
 msgid "Always Ask me what to do."
-msgstr "Altijd vragen om een actie"
+msgstr ""
 
 #: tsett.radiofontbig.caption
 msgid "Big"
-msgstr "Groot"
+msgstr ""
 
 #: tsett.radiofonthuge.caption
 msgctxt "tsett.radiofonthuge.caption"
 msgid "Huge"
-msgstr "Enorm"
+msgstr ""
 
 #: tsett.radiofontmedium.caption
 msgid "Medium"
-msgstr "Normaal"
+msgstr ""
 
 #: tsett.radiofontsmall.caption
 msgid "Small"
-msgstr "Klein"
+msgstr ""
 
 #: tsett.radiouselocal.caption
 msgid "Use Local Note and Overwrite Server Note."
-msgstr "Lokale notitie gebruiken en servernotitie overschrijven"
+msgstr ""
 
 #: tsett.radiouseserver.caption
 msgid "Use Server Note and Rename Local Note."
-msgstr "Servernotitie gebruiken en lokale notitie hernoemen"
+msgstr ""
 
 #: tsett.speedbuthelp.caption
-#, fuzzy
 msgctxt "tsett.speedbuthelp.caption"
 msgid "Help"
-msgstr "Hulp"
+msgstr ""
 
 #: tsett.speedbuthide.caption
-#, fuzzy
 msgctxt "tsett.speedbuthide.caption"
 msgid "Close"
-msgstr "Sluiten"
+msgstr ""
 
 #: tsett.speedbutttbmenu.caption
 msgctxt "tsett.speedbutttbmenu.caption"
@@ -1817,27 +1791,28 @@ msgstr ""
 
 #: tsett.tabbackup.caption
 msgid "BackUp"
-msgstr "Back-up"
+msgstr ""
 
 #: tsett.tabbasic.caption
 msgid "Basic"
-msgstr "Basis"
+msgstr ""
 
 #: tsett.tabdisplay.caption
 msgid "Notes"
-msgstr "Notities"
+msgstr ""
 
-#: tsett.tabsnapshot.caption
-msgid "SnapShot"
-msgstr "Momentopname"
+#: tsett.tabrecover.caption
+msgctxt "tsett.tabrecover.caption"
+msgid "Recover"
+msgstr ""
 
 #: tsett.tabspell.caption
 msgctxt "tsett.tabspell.caption"
 msgid "Spell"
-msgstr "Spellingcontrole"
+msgstr ""
 
 #: tsett.tabsync.caption
 msgctxt "tsett.tabsync.caption"
 msgid "Sync"
-msgstr "Synchronisatie"
+msgstr ""
 

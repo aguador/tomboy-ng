@@ -1,0 +1,108 @@
+Steps to build Debian Source Package for tomboy-ng.
+---------------------------------------------------
+ 
+You need two files to start.  The tomboy-ng-master.zip file and the 
+script, prepare.bash.  
+
+WHAT does prepare.bash do ?
+---------------------------
+Firstly, prepare is NOT required when rebuilding either binary or src packages.
+Prepare takes a zip file (github sends us a zip file), unzips it, removes some
+unnecessary files, downloads KControls source, again removes some unnecessary
+files, makes some changes according to desired widget set and then creates the
+corresponding .orig.tar.gz file.
+
+Dependancies
+---------------- 
+
+You should already have FPC and Lazarus installed. And
+the tomboy-ng build dependencies, gtk2-dev, libnotify-dev etc. 
+If you just want to make a binary thats all you need. If you are making a deb 
+or a deb src package, you will need the devscripts package installed and some 
+config, such as -
+
+ * In ~/.devscripts.conf a line defining the GPG key you will sign with. eg
+   DEBSIGN_KEYID=your-key-fingerprint
+   Note : while it says 'keyid' its happier with the full fingerprint.
+
+ * Edit the prepare script so that DEBEMAIL and DEBFULLNAME match the key.
+   $DEBFULLNAME <$DEBEMAIL> must look exactly like the key's version. 
+
+The process
+-----------------
+
+Download the tomboy-ng zip file from github -
+
+wget https://github.com/tomboy-notes/tomboy-ng/archive/master.zip
+mv master.zip tomboy-ng-master.zip
+
+Note : clicking the Github tomboy-ng page's Code -> Download Zip from github
+       will get you the file called tomboy-ng-master.zip however, wget gets a 
+       master.zip and that must be renamed.
+
+You can now extract the prepare.bash script from the zip file or, perhaps easier
+download it from the github tomboy-ng page, browse to prepare.bash, click the
+"raw" button, right click, save_as.
+
+The prepare script will unzip the zip file, download kcontrols and insert its
+source into the working directory, leave some semophores for the buildit.bash
+script about where your FPC and Lazarus is (if you have them in user space, not
+needed if installed in root space).  It then creates a .orig.tar.gz file that
+becomes the reference for the deb source package.  
+
+Note that the .orig.tar.gz file's content must be identical to the working 
+directory at this stage, the build process will fail if you change anything in
+working dir after the .orig.tar.gz file is created.  If you need to change 
+things, perhaps you are going to sign with your key (you cannot use mine!) or
+you wish to change build target or dependencies for example, give the prepare
+script a -p option, it will pause before making the .orig.tar.gz file. 
+
+cd into the working dir, its called  tomboy-ng_{$VER-1}.   And do one of -
+
+ * If you just want the binary, run bash ./buildit.bash  no signing needed and 
+   you will find the binary down in the source directory.  
+
+ * If you want a binary deb, you must have devscripts installed, and some config
+   things, you should have changed the prepare script wrt your own gpg key.
+   In the working directory, run    debbuild -us uc
+   The binary dep will appear (along with src files) in directory above.
+
+ * If you are going to build a full deb src package, to eg submit to a PPA
+   then first check its building OK with above step then run  debuild -S
+   you will be asked sign it and it will leave the necessary files in the
+   directory above.
+
+   cd up and make sure you see a tomboy-ng_{$VER-1}_source.changes file. Run -
+   dput ppa:d-bannon/ppa-tomboy-ng tomboy-ng_0.29e-1_source.changes [enter]
+   Note : pretty obviously, you won't be submitting to my PPA so change it.
+
+Options to prepare.bash
+------------------------ 
+
+WIDGET SET
+The default widget set is GTK2, pass -Q to prepare.bash and you will get Qt5
+
+BUILD TIME CHANGES
+Pass -p to prepare.bash and it will pause just before creating the .orig. file
+then, in another terminal you can alter the tree. Useful to add extra info in
+the changelog, the target system, dependancies etc.
+
+CLEAN or UPDATE
+There are two options that were used during development, likely of no use to
+most other people.
+
+USING LOCALLY BUILT LAZARUS / FPC
+In fact, you need only lazbuild and lcl  (make lazbuild; make lcl).  Many
+Lazarus users (sensibly) build their own from source, but that leaves them
+with Lazarus not findable using the core system path that debuild uses. 
+Similarly, fpc can be installed direct from SourceForge tarballs.
+The prepare script will find your tarball FPC (as long as it is on your
+full path) but not Lazarus. So, put a full path to lazbuild with the option
+-l and prepare.bash will leave 'semophores' for the build process to find
+fpc and Lazarus. debuild will object as it does not find Lazarus in the apt
+database, pass it -d and all will be well.
+   
+Please report any issues at https://github.com/tomboy-notes/tomboy-ng
+
+David Bannon, August 2020
+

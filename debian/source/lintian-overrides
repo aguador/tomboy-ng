@@ -1,0 +1,10 @@
+# This file applies to the source package, for the one
+# that applies to binary, see ../../doc/overrides
+#
+# This is a non-native package but not one that knows
+# how to do Debian metadata yet.
+tomboy-ng source: upstream-metadata-file-is-missing
+
+# At present, upstream does not support watch file.
+tomboy-ng source: debian-watch-file-is-missing
+

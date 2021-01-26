@@ -9,7 +9,8 @@ uses
         cthreads,
         {$ENDIF}{$ENDIF}
         Interfaces, // this includes the LCL widgetset
-        Forms, main, cmdline, export_notes, ttutils, import_notes
+        Forms, main, cmdline, export_notes, ttutils, import_notes, nextcloud,
+		note2po, notenormal
         { you can add units after this };
 
 {$R *.res}
@@ -17,7 +18,7 @@ uses
 begin
         if Finished() then exit;
         RequireDerivedFormResource:=True;
-        Application.Scaled:=True;
+		Application.Scaled:=True;
         Application.Initialize;
 		Application.CreateForm(TFormMain, FormMain);
         Application.Run;

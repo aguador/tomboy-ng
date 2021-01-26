@@ -49,7 +49,7 @@ function MakeDMG () {
 		BITS="64"
 		REL="CocoaRelease"
 	fi
-	cd ../tomboy-ng
+	cd ../source
 	rm -f "$PRODUCT"
 	TOMBOY_NG_VER="$VERSION" $LAZ_FULL_DIR/lazbuild   --pcp="$HOME/.$LAZ_DIR" -B --cpu="$CPU" --ws="$1" --build-mode="$REL" --os="darwin" Tomboy_NG.lpi
 	if [ ! -f "$PRODUCT" ]; then
@@ -72,9 +72,10 @@ function MakeDMG () {
 	# cp Info.plist "$CONTENTS/."
 	cp PkgInfo "$CONTENTS/."
 	cp ../glyphs/tomboy-ng.icns "$CONTENTS/Resources/."
-	for i in $MANUALS; do
-		cp ../doc/"$i" "$CONTENTS/Resources/.";
-	done;
+	# for i in $MANUALS; do
+	#	cp ../doc/"$i" "$CONTENTS/Resources/.";
+	# done;
+	cp -R ../doc/HELP "$CONTENTS/Resources/."
 	mkdir "$CONTENTS/MacOS/locale"
 	for i in `ls -b ../po/*.??.po`; do
             echo "Name is $i"
@@ -86,12 +87,13 @@ function MakeDMG () {
 	    "$MSGFMT" -o "$CONTENTS/MacOS/locale/$CCODE"/"$BASENAME".mo "$i"
 	    "$MSGFMT" -o "$CONTENTS/MacOS/locale/$CCODE"/lclstrconsts.mo "$LAZ_FULL_DIR"/lcl/languages/lclstrconsts."$CCODE".po
 	done
-	mv "../$PRODUCT"/"$PRODUCT" "$CONTENTS/MacOS/."
+	mv ../source/"$PRODUCT" "$CONTENTS/MacOS/."
 	rm -f "$PRODUCT""$BITS"_"$VERSION".dmg
 	~/create-dmg-master/create-dmg --volname "$PRODUCT""$BITS" --volicon "../glyphs/vol.icns" "$PRODUCT""$BITS"_"$VERSION".dmg "./$WORK/"
 }
 
 rm -f *.dmg
-MakeDMG "carbon"
+# MakeDMG "carbon"
+# We don't bother building carbon any more, it should still build, must test occasionally. July 2020
 MakeDMG "cocoa"
 
